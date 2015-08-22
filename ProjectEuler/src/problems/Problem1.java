@@ -9,7 +9,36 @@ public class Problem1 {
 	 */
 
 	public static void main(String[] args) {
-		System.out.println("First Program after long time");
+		long startTime = System.currentTimeMillis();
+		System.out.println("Start Time : " + String.valueOf(startTime));
+		
+		int maxNumber = 1000;
+		int firstNumber = 3;
+		int secondNumber = 5;
+		
+		int finalSum = 0;
+		
+		
+		for(int i=1; i < maxNumber;i++){
+			
+			//if((i % 3 == 0 && i%5 !=0) || (i % 5 == 0 && i % 3 !=0)){
+			// Number can be divisible by both like 15
+			if((i % 3 == 0 ) || (i % 5 == 0)){
+					finalSum = finalSum + i;
+					//System.out.println("i is :" + String.valueOf(i));
+			}
+			
+		}
+				
+		
+		System.out.println("MaxNumber : " + String.valueOf(maxNumber));
+		System.out.println("factor Numbers : " + String.valueOf(firstNumber)+","+ String.valueOf(secondNumber));
+		System.out.println("Final Sum : " + String.valueOf(finalSum));
+		
+		
+		System.out.println("End Time : " + String.valueOf(System.currentTimeMillis()));
+		
+		System.out.println("Total Execution Time in millisecond :" + String.valueOf((System.currentTimeMillis() - startTime)));
 		
 	}
 
