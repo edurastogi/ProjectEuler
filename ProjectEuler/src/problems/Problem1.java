@@ -18,7 +18,6 @@ public class Problem1 {
 		
 		int finalSum = 0;
 		
-		
 		for(int i=1; i < maxNumber;i++){
 			
 			//if((i % 3 == 0 && i%5 !=0) || (i % 5 == 0 && i % 3 !=0)){
@@ -29,15 +28,12 @@ public class Problem1 {
 			}
 			
 		}
-				
 		
 		System.out.println("MaxNumber : " + String.valueOf(maxNumber));
 		System.out.println("factor Numbers : " + String.valueOf(firstNumber)+","+ String.valueOf(secondNumber));
 		System.out.println("Final Sum : " + String.valueOf(finalSum));
 		
-		
 		System.out.println("End Time : " + String.valueOf(System.currentTimeMillis()));
-		
 		System.out.println("Total Execution Time in millisecond :" + String.valueOf((System.currentTimeMillis() - startTime)));
 		
 	}
