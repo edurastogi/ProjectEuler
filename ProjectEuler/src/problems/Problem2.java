@@ -29,7 +29,6 @@ public class Problem2 {
 		
 		System.out.println("Sum is : " + String.valueOf(sum));
 
-
 		System.out.println("End Time : " + String.valueOf(System.currentTimeMillis()));
 		System.out.println("Total Execution Time in millisecond :" + String.valueOf((System.currentTimeMillis() - startTime)));
 
