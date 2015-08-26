@@ -65,6 +65,7 @@ public class  SieveOfAtkin
         /** Accept n **/
         System.out.println("Enter number to find all primes less than the number\n");
         int n = scan.nextInt();
+        scan.close();
         soa.getPrimes(n);        
     }
 }

@@ -1,5 +1,7 @@
 package problems;
 
+import reference.Utility;
+
 public class Problem3 {
 	
 	/*
@@ -12,12 +14,22 @@ public class Problem3 {
 		long startTime = System.currentTimeMillis();
 		System.out.println("Start Time : " + String.valueOf(startTime));
 		
-		System.out.println(String.valueOf(Math.sqrt(13195)));
+		long iniNumber = 600851475143L;
+		int i = 0;
+		int primeNum = 3; 
+		
+		while ( i < 1000){
+			if(iniNumber % primeNum == 0) {
+				iniNumber = iniNumber/primeNum;
+				System.out.println("Step : " +String.valueOf(i) +  "   Prime Number is : " + String.valueOf(primeNum) + "     IniNumber is : " + String.valueOf(iniNumber));
+			}
+		
+			primeNum = Utility.nextPrime(primeNum);
+			i++;
+		}
 		
 		System.out.println("End Time : " + String.valueOf(System.currentTimeMillis()));
 		System.out.println("Total Execution Time in millisecond :" + String.valueOf((System.currentTimeMillis() - startTime)));
-		
-		long i = 600851475143L;
 
 	}
 
